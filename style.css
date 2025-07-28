@@ -1,0 +1,248 @@
+:root {
+    font-size: 12px;
+    --main-color: #d3ad7f;
+    --black: #131313;
+    --bg: #010103;
+    --data: #b59d12e9;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+    --font-audiowide: 'Audiowide', cursive;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.caixa-video {
+    position: fixed;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    zoom: 50%;
+
+}
+
+.caixa-video video {
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+
+}
+
+.mascara {
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(to top, rgb(12, 12, 12), rgba(0, 0, 0, 0.777), rgba(0, 0, 0, 0.54), rgb(0, 0, 0));
+}
+
+section{
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 2;
+    z-index: 2;
+    background-color: #0f0f0fe2;
+    width: 100vw;
+    border-bottom: var(--border);
+
+}
+
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    padding: 1.5rem 0;
+    position: relative;
+
+}
+.header section nav a{
+    margin: 0 8rem;
+    font-size: 2rem;
+    color: #fff;
+    transition: 0.2s linear;
+    border: none;
+}
+
+.header section nav a:hover {
+    color: var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color) ;
+    padding: 0.3rem 0;
+}
+
+
+main {
+    text-align: center;
+}
+
+.caixa-projetos {
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    max-width: 60rem;
+    flex-direction: column;
+    padding: 12rem 0;
+    gap: 12rem;
+}
+
+main .caixa-projetos h3{
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #ffffff55, 0 0 20px #fff8dc5b, 0 0 30px #ffeb9955;
+    font-weight:bold;
+    
+}
+main .caixa-projetos strong {
+    font-family:var(--font-audiowide);
+    font-size: 12rem;
+    text-shadow: 0 0 10px #ffe602d6, 0 0 20px rgba(255, 201, 7, 0.867), 0 0 30px rgba(253, 215, 0, 0.738);
+    transition: 0.3s linear;
+    
+}
+main .caixa-projetos strong:hover {
+    text-shadow: 0 0 10px #ffe602, 0 0 20px #ffdd00, 0 0 30px #ffcc00;
+}
+
+
+main .caixa-projetos button {
+    font-size: 2rem;
+    padding: 1rem 3rem;
+    border-radius: 15px;
+    background-color: var(--main-color);
+    border: none;
+    color: #fff;    
+    transition: 0.3s linear;
+    cursor: pointer;
+}
+
+main .caixa-projetos button:hover {
+    letter-spacing: 0.1rem;
+    background-color: var(--black);
+}
+
+.eu {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.lado-esquerdo {
+    text-align: center;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #37373770, 0 0 40px #28272776;
+}
+
+.lado-esquerdo img {
+    width: 18rem;
+    height: auto;
+    border-radius: 50%;
+    
+    
+}
+.lado-esquerdo h3{
+    font-size: 2rem;
+    border-radius: 15px;
+    color: #010103;
+    font-family: "Playfair Display", serif;
+    margin-top: -5rem;
+    box-shadow: 0 0 20px #0000007b, 0 0 20px #000000;
+}
+
+.lado-direito {
+    text-align: center;
+    margin: 0 auto;
+    letter-spacing: 0.2rem;
+    padding: 2rem;      
+}
+
+.lado-direito h3{
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+    font-family: "Playfair Display", serif;
+    letter-spacing: 0.3rem;
+}
+.lado-direito strong {
+    font-size: 1.5rem;
+}
+
+.lado-direito .faculdade {
+  font-size: 1.8rem;
+  margin: 0.5rem 0;
+}
+
+.lado-direito .faculdade strong {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.lado-direito p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin: 0.5rem 0;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.05rem;
+}
+.lado-direito .copy {
+    font-size: 1rem;
+    margin: 0 0 -20rem 0;
+    
+}
+
+.lado-direito a {
+  color: #0077cc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.lado-direito a:hover {
+  text-decoration: underline;
+  color: #004a99;
+}
+.data-entrada {
+  font-style: italic;
+  color: #555;
+  margin-top: 0.5rem;
+}
+.data-entrada .atualmente {
+  font-weight: 600;
+  color: #ffbb00;
+}
+
+.botao-curriculo {
+  background-color: #22222275;
+  color: #fff;
+  padding: 1rem 2rem;   
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 2s;
+
+}
+
+.botao-curriculo:hover {
+  background-color: #13217394;
+}
+
+#iconeCurriculo {
+    color: #fffffffe;
+}
+
